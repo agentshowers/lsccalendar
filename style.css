@@ -37,6 +37,9 @@ body {
 	display: none;
 }
 
+#events-list {
+	margin-top: 25px;
+}
 footer {
   position: fixed;
   bottom: 0;

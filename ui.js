@@ -22,14 +22,14 @@ function setInterestChecks() {
 	unloadEvents();
 	getEvents(function(events) {
 		loadEvents("Interest Checks", events);
-	}, upcomingEventsManipulator);
+	}, interestCheckManipulator);
 }
 
 function setPastEvents() {
 	unloadEvents();
 	getEvents(function(events) {
 		loadEvents("Past Events", events);
-	}, upcomingEventsManipulator);
+	}, pastEventsManipulator);
 }
 
 function loadEvents(title, events) {

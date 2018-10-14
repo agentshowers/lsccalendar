@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>LSC Calendar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="events.js"></script>
+	<script src="ui.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">LSC Calendar</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#" id="upcoming">Upcoming Events</a></li>
+				<li><a href="#" id="interest-check">Interest Checks</a></li>
+				<li><a href="#" id="past-events">Past Events</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div id="error-alert" class="alert alert-danger alert-dismissible fade in">
+		An error has occurred when getting the Reddit events. Please try again later.
+	</div>
+
+	<div id="loader"></div>
+	
+	<div id="events-container" class="container">
+		<h1 id="events-title"></h1>
+		<div id="events-list" class="list-group"></div>
+	</div>
+	
+	<footer>
+		<div class="container">
+			<span>Created by <a href="https://www.reddit.com/user/harlequin90" target="_blank">u/harlequin90</a></span>
+		</div>
+    </footer>
+</body>
+</html>

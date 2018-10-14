@@ -40,6 +40,14 @@ body {
 #events-list {
 	margin-top: 25px;
 }
+
+#github_logo {
+	width: 24px;
+    top: -2px;
+    position: relative;
+    margin-left: 5px;
+}
+
 footer {
   position: fixed;
   bottom: 0;
